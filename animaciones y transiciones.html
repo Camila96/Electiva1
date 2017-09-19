@@ -1,0 +1,30 @@
+<html>
+
+<head>
+
+	<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+<script >
+
+	function Accion(){
+		$("#cuadrado").animate({ top:"400px"},5000)//abajo  TODO POR CONSOLA
+        	$("#cuadrado").animate({ top:"0px"},5000) // ariribaa
+			$("#cuadrado").animate({left:"400px"},5000)// izquierda
+			$("#cuadrado").animate({left:"0px"},5000)// derecha
+			$("#cuadrado").animate({left:"400px", top:"400px"},5000) //diagonal
+			$("#cuadrado").fadeOut(5000) //LO DESVANECE
+			$("#cuadrado").fadeIn(5000)// aparece
+	}
+</script>
+	</head>
+
+	<body>
+		<div id= "cuadrado" style =" width: 100px; height: 100px; background: #428bca; position:absolute; top: 100px;left : 100px;" >
+			
+		</div>
+
+		<button onClick="Accion()"> Accion</button>
+	</body>
+</html>

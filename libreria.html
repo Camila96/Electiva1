@@ -1,0 +1,102 @@
+
+<!--
+antes todo era desde diseñar desde 0, por ende nace esto
+libreria estilos predefinidos para los componentes html
+y en difernetes pantallas para adecuar el tamaño
+
+ ocupa 12 como toda la pantala,
+ tamnaños disponibles xs sm md lg
+-->
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+<!--div class="row"> 
+	<div col-lg-4 col-md-6 col-sm-6>
+	<label>   Nombre</label>
+	<input type="text" name="Nombre" class="form-control"> 
+	</div>
+	<div col-lg-4 col-md-6 col-sm-6>
+	<label> Edad</label>
+	<input type="number" name="Edad" class="form-control">
+	</div>
+	<div col-lg-4 col-md-6 col-sm-6>
+	<label> usuario</label>
+	<input type="text" name="usuario" class="form-control">
+	</div>
+</div>
+
+<div class="btn-group">
+<button class ="btn btn-primary"> Enviar</button>
+<button class="btn btn-outline-success"> Hola</button>
+<button class="btn btn-warning"> gh</button>
+</div>
+
+
+Se procede a agregar un panel
+-->
+<div  class="card ">
+<div class="card-header bg-primary"> Titulo</div>
+<div class="card-block"></div>
+
+		<div class="row"> 
+			<div col-lg-4 col-md-6 col-sm-6>
+			<label>   Nombre</label>
+			<input type="text" name="Nombre" class="form-control"> 
+			</div>
+			<div col-lg-4 col-md-6 col-sm-6>
+			<label> Edad</label>
+			<input type="number" name="Edad" class="form-control">
+			</div>
+			<div col-lg-4 col-md-6 col-sm-6>
+			<label> usuario</label>
+			<input type="text" name="usuario" class="form-control">
+			</div>
+		</div>
+
+		<div class="btn-group">
+		<button class ="btn btn-primary" data-target ="#myModel" data-toggle="modal" > Enviar</button>
+		<button class="btn btn-outline-success"> Hola</button>
+		<button class="btn btn-warning"> gh</button>
+		</div>
+
+</div>
+<!--
+$('#myModel').modal(); para mostrar el modal por codigo
+y $('#myModel').modal('hide'); para ocultarlo
+incluir las librerias de arriba las 3
+-->
+<div id="myModel" class="modal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Modal body text goes here.</p>
+      </div>
+      <div class="modal-footer">
+        <button  type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
+
